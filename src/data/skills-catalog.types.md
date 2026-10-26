@@ -10,7 +10,7 @@ The top level contains `schemaVersion`, `total`, `generatedAt`, `starsUpdatedAt`
 
 Skill records contain:
 
-- `id`, `name`, `description`, `category`, `categoryLabel`, and optional `family`. IDs remain stable independently of their current sort order.
+- `id`, `name`, `purpose`, `description`, `category`, `categoryLabel`, and optional `family`. `purpose` is a concise, individually reviewed Chinese sentence for the card front; the complete original `description` remains in the details. IDs remain stable independently of their current sort order.
 - `useCases`, `howTo`, `inputs`, `outputs`, and an optional `example` with `prompt` and `expectedOutput`. These are source-specific summaries and usage excerpts or disclosed guidance, not a copy of all SKILL.md instructions.
 - `contentQuality`, recording whether a summary was curated or original, whether a workflow was extracted, and whether input/output descriptions were extracted or supplied as category guidance. Suggested example prompts do not claim that the task was actually run.
 - `source: { label, kind }`. Exact installation locations, `source.skillFile`, original full definitions, private provenance evidence and credentials are excluded from the delivery payload.

@@ -11,6 +11,7 @@ import "./skill-collection.css";
 export type SkillCatalogEntry = {
   id: string;
   name: string;
+  purpose?: string;
   description: string;
   category: string;
   categoryLabel?: string;
@@ -148,7 +149,7 @@ const SkillCard = memo(function SkillCard({ entry, index, still, pending, onRequ
       <button className="skill-card-open" onPointerDown={event => { pointerType.current = event.pointerType; onCancelRequest(); }} onClick={select} onDoubleClick={doubleClick} aria-label={`查看 ${entry.name} 技能详情`} aria-haspopup="dialog" aria-busy={pending || undefined}>
         <SkillCover entry={entry} />
         <span className="skill-card-holo-foil" aria-hidden="true" /><span className="skill-card-edge" aria-hidden="true" />
-        <span className="skill-card-copy"><span className="skill-card-category">{entry.categoryLabel || entry.category}<span>{String(index + 1).padStart(2, "0")}</span></span><strong>{entry.name}</strong><span className="skill-card-description">{entry.description || "查看技能用途与原始说明"}</span><span className="skill-card-caption"><Stars entry={entry} /><span className="skill-card-open-caption">{pending ? "正在打开" : "打开档案"} <ArrowUpRight size={12} /></span></span></span>
+        <span className="skill-card-copy"><span className="skill-card-category">{entry.categoryLabel || entry.category}<span>{String(index + 1).padStart(2, "0")}</span></span><strong>{entry.name}</strong><span className="skill-card-description">{entry.purpose || entry.description || "查看技能用途与原始说明"}</span><span className="skill-card-caption"><Stars entry={entry} /><span className="skill-card-open-caption">{pending ? "正在打开" : "打开档案"} <ArrowUpRight size={12} /></span></span></span>
       </button>
       <div className="skill-card-source"><span><Fingerprint size={10} /> {entry.source?.kind === "plugin" ? "PLUGIN SKILL" : entry.source?.kind === "repository" ? "REPOSITORY SKILL" : "LOCAL SKILL"}</span>{repo ? <a href={repo} {...outside} aria-label={`打开 ${entry.name} 的 GitHub 仓库`} onPointerDown={event => { onCancelRequest(); event.stopPropagation(); }} onClick={event => { onCancelRequest(); event.stopPropagation(); }}><Github size={11} /><span>仓库</span><ArrowUpRight size={10} /></a> : <span className="skill-no-repository">未关联仓库</span>}</div>
     </motion.div>
@@ -218,7 +219,7 @@ export default function SkillCollection({ entries, updatedAt = null, loading = f
     }
     return [{ id: ALL, label: "全部分类", count: entries.length }, ...[...byCategory.values()].sort((a, b) => collator.compare(a.label, b.label))];
   }, [entries]);
-  const searchable = useMemo(() => entries.map(entry => ({ entry, text: [entry.name, entry.description, entry.category, entry.categoryLabel, entry.repository?.owner, entry.repository?.name, ...(entry.useCases || []), ...(entry.inputs || []), ...(entry.outputs || [])].filter(Boolean).join(" ").toLocaleLowerCase() })), [entries]);
+  const searchable = useMemo(() => entries.map(entry => ({ entry, text: [entry.name, entry.purpose, entry.description, entry.category, entry.categoryLabel, entry.repository?.owner, entry.repository?.name, ...(entry.useCases || []), ...(entry.inputs || []), ...(entry.outputs || [])].filter(Boolean).join(" ").toLocaleLowerCase() })), [entries]);
   const results = useMemo(() => {
     const terms = deferredQuery.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const matches = searchable.filter(item => (category === ALL || item.entry.category === category) && terms.every(term => item.text.includes(term))).map(item => item.entry);

@@ -8,7 +8,7 @@ export default function SkillArchive() {
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
     const controller = new AbortController();
-    fetch(`${import.meta.env.BASE_URL}data/skills-catalog.json`, { signal: controller.signal })
+    fetch(`${import.meta.env.BASE_URL}data/skills-catalog.json`, { signal: controller.signal, cache: "no-cache" })
       .then(response => {
         if (!response.ok) throw new Error("收藏档案暂时无法读取 请稍后重新打开");
         return response.json();
