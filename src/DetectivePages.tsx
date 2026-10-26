@@ -35,6 +35,7 @@ import {
 const outside = { target: "_blank", rel: "noopener noreferrer" };
 const ease = [0.22, 1, 0.36, 1] as const;
 const DetectiveAtlas=lazy(()=>import("./DetectiveAtlas"));
+const SkillArchive=lazy(()=>import("./SkillArchive"));
 
 const CasePaper=forwardRef<HTMLElement,HTMLMotionProps<"article">>(function CasePaper(props,ref){
   const present=useIsPresent();
@@ -60,7 +61,7 @@ export function CaseArchive({
   Visual: ComponentType<{ visual: string }>;
   promptSite: string;
 }) {
-  const [filter, setFilter] = useState("全部档案");
+  const [filter, setFilter] = useState(() => new URLSearchParams(location.search).get("archive") === "skills" ? "Skill" : "全部档案");
   const [selected, setSelected] = useState("001");
   const [preview,setPreview]=useState<string|null>(null);
   const previewBounds=useRef<DOMRect|null>(null);
@@ -73,7 +74,7 @@ export function CaseArchive({
     (p) => filter === "全部档案" || p.category === filter,
   );
   const current = visible.find((p) => p.id === selected) || visible[0];
-  const website = current.href === profile.promptHub ? promptSite : "";
+  const website = current?.href === profile.promptHub ? promptSite : "";
   const previewProject=visible.find(project=>project.id===preview&&project.id!==current.id);
   const activeIndex = visible.indexOf(current);
   const choose = (direction: number) => {
@@ -83,9 +84,15 @@ export function CaseArchive({
     );
   };
   const selectFile=(id:string)=>{setDirection(visible.findIndex(p=>p.id===id)>=activeIndex?1:-1);setSelected(id);};
+  const selectArchive=(value:string)=>{
+    setFilter(value);setPreview(null);
+    const url=new URL(location.href);
+    if(value==="Skill")url.searchParams.set("archive","skills");else url.searchParams.delete("archive");
+    history.replaceState(history.state,"",`${url.pathname}${url.search}${url.hash}`);
+  };
   return (
-    <section className="case-archive inner-page" aria-labelledby="cases-title">
-      <div className="archive-heading">
+    <section className={`case-archive inner-page${filter === "Skill" ? " case-archive--skills" : ""}`} aria-labelledby={filter === "Skill" ? "skill-collection-title" : "cases-title"}>
+      {filter !== "Skill" && <div className="archive-heading">
         <div>
           <Chapter number="03" english="THE CASE ARCHIVE" />
           <h1 id="cases-title">
@@ -94,9 +101,9 @@ export function CaseArchive({
           <p>灵感是起点，作品是证据。打开一份仍在续写的创作卷宗。</p>
         </div>
         <DetectiveNarrator mode="holmes" label="THE INVESTIGATION" line="每一份作品，都经得起观察。" />
-      </div>
+      </div>}
       <div className="archive-filter">
-        <ToggleGroup className="filter-tabs" value={filter} onValueChange={value=>{setFilter(value);setPreview(null);}} aria-label="项目分类">
+        <ToggleGroup className="filter-tabs" value={filter} onValueChange={selectArchive} aria-label="项目分类">
           {["全部档案", "AIGC", "Skill", "实验"].map((f) => (
             <ToggleGroupItem
               key={f}
@@ -114,7 +121,7 @@ export function CaseArchive({
           <ArrowUpRight size={14} />
         </a>
       </div>
-      <div className="case-desk" ref={desk}>
+      {filter === "Skill" ? <Suspense fallback={<p className="skill-archive-loading" role="status">正在打开 Skill 全息收藏馆</p>}><SkillArchive /></Suspense> : <><div className="case-desk" ref={desk}>
         <ClueBeam container={desk} from={selectedFile} to={pin} curvature={35} activity={current.id} className="case-thread"/>
         <aside className="case-directory" data-preview={previewProject?.id||"none"}>
           <div className="directory-caption">
@@ -240,6 +247,7 @@ export function CaseArchive({
         <p>每一个「如果」，都值得被认真追查。</p>
         <span>好奇心 · 未结案</span>
       </div>
+      </>}
     </section>
   );
 }
