@@ -1,0 +1,17 @@
+Earth Day Map, Earth Night Map, and Earth Clouds
+Creator: Solar System Scope / INOVE
+Source collection: https://www.solarsystemscope.com/textures/
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+
+Original source files:
+https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg
+https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg
+https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg
+
+Changes: converted the original 2048 x 1024 JPEG maps to WebP (day quality 91,
+night quality 88, clouds quality 86); runtime shader desaturates the day map,
+shades oceans and terrain, mixes night illumination, rotates the cloud layer,
+and adds an original atmospheric scattering treatment.
+
+The creators do not endorse this website. Attribution retained with these assets.
