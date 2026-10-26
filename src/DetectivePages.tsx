@@ -54,9 +54,11 @@ function Chapter({ number, english }: { number: string; english: string }) {
 export function CaseArchive({
   onProject,
   Visual,
+  promptSite,
 }: {
   onProject: (i: number) => void;
   Visual: ComponentType<{ visual: string }>;
+  promptSite: string;
 }) {
   const [filter, setFilter] = useState("全部档案");
   const [selected, setSelected] = useState("001");
@@ -71,6 +73,7 @@ export function CaseArchive({
     (p) => filter === "全部档案" || p.category === filter,
   );
   const current = visible.find((p) => p.id === selected) || visible[0];
+  const website = current.href === profile.promptHub ? promptSite : "";
   const previewProject=visible.find(project=>project.id===preview&&project.id!==current.id);
   const activeIndex = visible.indexOf(current);
   const choose = (direction: number) => {
@@ -201,13 +204,16 @@ export function CaseArchive({
                     <span key={t}>{t}</span>
                   ))}
                 </div>
-                <button
-                  className="case-open-button"
-                  onClick={() => onProject(projects.indexOf(current))}
-                >
-                  <span>打开完整卷宗</span>
-                  <ArrowUpRight size={20} />
-                </button>
+                <div className="case-project-actions">
+                  <button
+                    className="case-open-button"
+                    onClick={() => onProject(projects.indexOf(current))}
+                  >
+                    <span>打开完整卷宗</span>
+                    <ArrowUpRight size={20} />
+                  </button>
+                  {website && <div className="case-project-links"><a href={website} {...outside}>访问网站 <ArrowUpRight size={13} /></a><a href={current.href} {...outside}><Github size={12} /> GitHub 源码 <ArrowUpRight size={12} /></a></div>}
+                </div>
               </div>
             </div>
             <footer className="document-bottom">

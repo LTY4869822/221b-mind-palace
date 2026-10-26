@@ -496,8 +496,8 @@ function ProjectVisual({ visual }: { visual: string }) {
   );
 }
 
-function Cases({ onProject }: { onProject: (i: number) => void }) {
-  return <CaseArchive onProject={onProject} Visual={ProjectVisual} />;
+function Cases({ onProject, promptSite }: { onProject: (i: number) => void; promptSite: string }) {
+  return <CaseArchive onProject={onProject} Visual={ProjectVisual} promptSite={promptSite} />;
 }
 
 function Library() {
@@ -834,7 +834,7 @@ function App() {
                   paused={paused}
                 />
               ) : route === "/cases" ? (
-                <Cases onProject={setProject} />
+                <Cases onProject={setProject} promptSite={promptSite} />
               ) : route === "/library" ? (
                 <Library />
               ) : route === "/studio" ? (
@@ -987,13 +987,16 @@ function App() {
                   ))}
                 </div>
                 {projects[project].href ? (
-                  <ExtLink
-                    href={projects[project].href}
-                    className="button primary"
-                  >
-                    <Github size={16} /> 打开 GitHub 项目{" "}
-                    <ArrowUpRight size={16} />
-                  </ExtLink>
+                  <div className="project-destination-actions">
+                    {projects[project].href === profile.promptHub && promptSite && <ExtLink href={promptSite} className="button primary">访问网站 <ArrowUpRight size={16} /></ExtLink>}
+                    <ExtLink
+                      href={projects[project].href}
+                      className={projects[project].href === profile.promptHub && promptSite ? "outline-button" : "button primary"}
+                    >
+                      <Github size={16} /> {projects[project].href === profile.promptHub ? "GitHub 源码" : "打开 GitHub 项目"}{" "}
+                      <ArrowUpRight size={16} />
+                    </ExtLink>
+                  </div>
                 ) : (
                   <>
                     <p className="local-project-note">

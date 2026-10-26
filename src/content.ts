@@ -3,7 +3,7 @@ export const profile = {
   githubName: "游标卡尺不孤独",
   github: "https://github.com/LTY4869822",
   promptHub: "https://github.com/LTY4869822/PromptHub",
-  promptHubSite: "",
+  promptHubSite: "https://promptory-share.biaoyou13.chatgpt.site/",
   intro:
     "以好奇心为罗盘，以创造力为线索。\n在代码、影像与想象力之间，寻找属于自己的答案。",
 };

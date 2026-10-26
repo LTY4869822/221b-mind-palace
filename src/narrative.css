@@ -70,6 +70,13 @@
 .case-ink-stamp{position:absolute;right:24px;top:57px;border:1px solid #944a3d65;padding:7px 9px 5px;color:#9b4f40;font:italic 17px/1 var(--serif);letter-spacing:1px;z-index:2;pointer-events:none;transform-origin:center}
 .case-ink-stamp>small{display:block;margin-top:4px;padding-top:4px;border-top:1px solid #944a3d40;font:4px var(--sans);letter-spacing:1.4px;text-align:center}
 .document-copy{padding-top:7px}
+.case-project-actions{margin-top:auto}
+.case-project-actions .case-open-button{width:100%;margin-top:0}
+.case-project-links{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px;padding-top:4px}
+.case-project-links>a{display:inline-flex;align-items:center;gap:6px;min-height:34px;font-size:10px;color:#364d3c;transition:color .2s}
+.case-project-links>a:hover{color:#914b3c}
+.project-destination-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 16px}
+.project-destination-actions>.outline-button{min-height:44px}
 .document-copy h2{margin:8px 0}
 .document-rule{margin:8px 0}
 .document-description{line-height:1.8;margin-bottom:10px}
