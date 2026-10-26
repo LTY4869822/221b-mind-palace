@@ -1,0 +1,180 @@
+/* V4. Character-led film compositions. The pointer remains a native OS cursor. */
+.route-home .optic-scene { opacity: .23; }
+.route-home .film-scene { opacity: .28; }
+.home-copy { width: 54%; }
+.home .hero-display { font-size: clamp(80px, 8vw, 134px); }
+.character-cinema { position: absolute; right: 3.8%; top: 12px; bottom: 116px; width: 48%; z-index: 2; display: flex; flex-direction: column; }
+.cinema-topline { height: 30px; display: flex; align-items: center; gap: 9px; font-size: 6px; letter-spacing: 1.7px; color: #aa9c81; flex-shrink: 0; padding: 0 14px; }
+.cinema-topline i { margin-left: auto; font: 400 6px var(--sans); letter-spacing: 1.8px; color: #727f82; }
+.cinema-record { display: block; width: 4px; height: 4px; border-radius: 50%; background: #ae7562; box-shadow: 0 0 14px #b86a3f6e; }
+.cinema-stage { --camera-x: 0px; --camera-y: 0px; position: relative; flex: 1; min-height: 0; overflow: hidden; isolation: isolate; }
+.cinema-stage:before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse at 32% 44%, #ad784820, transparent 65%), radial-gradient(ellipse at 85% 70%, #358eac18, transparent 60%); }
+.cinema-architecture { position: absolute; inset: 2% 4% 0; opacity: .42; border-radius: 50% 50% 0 0; border: 1px solid #b29b6a24; }
+.cinema-architecture > span { display: block; text-align: center; font: italic 180px/.8 var(--serif); color: #b7ac8715; margin-top: 12%; letter-spacing: -15px; }
+.cinema-architecture > i { position: absolute; top: 30%; bottom: 0; width: 1px; background: linear-gradient(#c1a57600, #c1a57655, transparent); }
+.cinema-architecture > i:nth-of-type(1) { left: 24%; }
+.cinema-architecture > i:nth-of-type(2) { left: 50%; }
+.cinema-architecture > i:nth-of-type(3) { left: 76%; }
+.cinema-beam { position: absolute; top: -25%; width: 18%; height: 135%; opacity: .22; pointer-events: none; transform-origin: top center; }
+.beam-gold { left: 22%; background: linear-gradient(90deg, transparent, #d4a95720, transparent); transform: rotate(-29deg); animation: golden-projector 19s ease-in-out infinite alternate; }
+.beam-blue { right: 3%; background: linear-gradient(90deg, transparent, #80c1dd18, transparent); transform: rotate(22deg); animation: blue-projector 23s ease-in-out infinite alternate; }
+.cinema-characters { position: absolute; inset: 0; transform: translate3d(var(--camera-x), var(--camera-y), 0); transition: transform .18s ease-out; }
+.cinema-person { position: absolute; transition: transform 1s var(--ease), opacity .8s, filter .8s; transform-origin: bottom center; }
+.cinema-holmes { width: 74%; height: 112%; bottom: -15%; left: -2%; z-index: 1; }
+.cinema-conan { width: 57%; height: 91%; bottom: -9%; right: -2%; z-index: 2; }
+.character-plane { position: relative; width: 100%; height: 100%; container-type: size; }
+.character-plane img { object-fit: contain; object-position: center bottom; user-select: none; pointer-events: none; }
+.cinema-holmes .character-plane { animation: holmes-entrance 1.6s var(--ease) both, character-breath 9s 1.6s ease-in-out infinite; }
+.cinema-conan .character-plane { animation: conan-entrance 1.7s .18s var(--ease) both, character-breath 8s 1.9s ease-in-out infinite reverse; }
+.character-light-pass { position: absolute; inset: 0; pointer-events: none; opacity: .18; background: linear-gradient(112deg, transparent 40%, #ffe2a5aa 48%, #fff2cb 50%, transparent 56%); background-size: 350% 100%; background-position: 130% 0; mask-image: var(--character-mask); mask-size: contain; mask-position: center bottom; mask-repeat: no-repeat; mix-blend-mode: screen; animation: character-light 12s 2s ease-in-out infinite; }
+.character-plane-conan .character-light-pass { background-image: linear-gradient(112deg, transparent 40%, #9fd6edaa 48%, #f1faff 50%, transparent 56%); animation-delay: 4.2s; }
+.character-optics { position: absolute; width: min(100cqw, 66.6667cqh); height: min(150cqw, 100cqh); bottom: 0; left: 50%; transform: translateX(-50%); pointer-events: none; }
+.character-glint, .character-glint-secondary { position: absolute; display: block; width: 15%; height: 1px; transform: rotate(-35deg) scaleX(0); background: linear-gradient(90deg, transparent, #f2faff, transparent); opacity: 0; animation: lens-glint 10s 3.5s ease-in-out infinite; }
+.character-plane-holmes .character-glint { left: 39%; top: 28%; }
+.character-plane-holmes .character-glint-secondary { display: none; }
+.character-plane-conan .character-glint { left: 38%; top: 22%; }
+.character-plane-conan .character-glint-secondary { left: 53%; top: 24%; animation-delay: 3.65s; }
+.cinema-haze { position: absolute; inset: 0; pointer-events: none; z-index: 3; background: linear-gradient(0deg, #0b0e11 0, #0b0e11dc 6%, transparent 29%), linear-gradient(90deg, #0b0e11 0, transparent 14%, transparent 94%, #0b0e11a0); }
+.cinema-title-card { position: absolute; left: 13%; right: 5%; bottom: 15px; z-index: 5; border-left: 1px solid #bfa07575; padding: 0 0 1px 15px; min-height: 43px; pointer-events: none; }
+.cinema-title-card span { font: 400 7px var(--sans); color: #d0b890; letter-spacing: 2px; }
+.cinema-title-card p { font: 400 13px/1.8 var(--song); margin: 7px 0 0; color: #b9b9ab; letter-spacing: 1px; }
+.cinema-frame-corner { width: 22px; height: 22px; position: absolute; z-index: 4; opacity: .35; border-color: #c3b38f; pointer-events: none; }
+.corner-tl { top: 12px; left: 12px; border-top: 1px solid; border-left: 1px solid; }
+.corner-br { right: 12px; bottom: 12px; border-right: 1px solid; border-bottom: 1px solid; }
+.cinema-controls { display: flex; align-items: center; gap: 19px; padding: 12px 14px 0; height: 43px; flex-shrink: 0; position: relative; z-index: 6; }
+.cinema-controls > button { display: inline-flex; align-items: center; gap: 6px; font: 400 10px var(--sans); color: #89918a; padding: 5px 0; border-bottom: 1px solid transparent; transition: color .3s, border-color .3s; white-space: nowrap; }
+.cinema-controls > button span { font: italic 12px var(--serif); color: #756a56; }
+.cinema-controls > button[aria-pressed="true"] { color: #dfc69f; border-color: #af926399; }
+.cinema-controls > button:hover { color: #e3d7be; }
+.cinema-controls .cinema-replay { margin-left: auto; width: 30px; height: 30px; justify-content: center; border: 1px solid #b9a16b30; border-radius: 50%; flex-shrink: 0; }
+.cinema-replay:hover svg { transform: rotate(-45deg); transition: transform .4s; }
+.cinema-focus-holmes .cinema-holmes { transform: translate(17%, 3%) scale(1.04); }
+.cinema-focus-holmes .cinema-conan { transform: translateX(44%) scale(.91); opacity: .14; filter: saturate(.35); }
+.cinema-focus-conan .cinema-holmes { transform: translateX(-33%) scale(.94); opacity: .12; filter: saturate(.35); }
+.cinema-focus-conan .cinema-conan { transform: translateX(-28%) scale(1.13); }
+
+/* The characters continue the narrative at each chapter entrance. */
+.detective-narrator { display: flex; align-items: center; width: 290px; height: 106px; flex-shrink: 0; position: relative; gap: 12px; }
+.narrator-portrait { height: 110px; width: 90px; position: relative; overflow: hidden; flex-shrink: 0; mask-image: linear-gradient(transparent 0%, #000 9%, #000 75%, transparent 100%); }
+.narrator-portrait .character-plane { height: 230px; width: 150px; left: -24px; top: 1px; animation: narrator-enter 1s var(--ease) both; }
+.narrator-conan .narrator-portrait .character-plane { width: 170px; height: 255px; left: -40px; top: -14px; }
+.narrator-lines { display: flex; flex-direction: column; gap: 10px; }
+.narrator-lines small { font: 400 6px var(--sans); color: #a58c67; letter-spacing: 1.6px; }
+.narrator-lines strong { font: 400 12px/1.7 var(--song); color: #b3b6a8; white-space: nowrap; }
+.narrator-lines i { display: flex; align-items: center; gap: 10px; color: #71847e; font: 400 6px var(--sans); letter-spacing: 1px; }
+.narrator-conan .narrator-lines small { color: #8bafc1; }
+.detective-narrator:hover .narrator-lines strong { color: #e1c7a0; }
+.detective-narrator:hover .character-plane { translate: 0 -3px; transition: translate .5s var(--ease); }
+
+/* Dossier: a lit portrait, with the existing artifact collection one tab away. */
+.portrait-view-switch { display: flex; gap: 16px; align-items: center; margin: 13px 23px 0; z-index: 2; }
+.portrait-view-switch button { font-size: 9px; color: #74867b; padding-bottom: 6px; border-bottom: 1px solid transparent; }
+.portrait-view-switch button[aria-pressed="true"] { color: var(--artifact-color); border-color: var(--artifact-color); }
+.portrait-view-switch > span { margin-left: auto; color: #65796d; font-size: 5px; letter-spacing: 1px; }
+.portrait-stage { min-height: 270px; }
+.dossier-character { position: absolute; inset: 0; overflow: hidden; isolation: isolate; }
+.portrait-architecture { position: absolute; right: 8%; top: 12%; font: italic 160px/1 var(--serif); color: #bda77f0e; letter-spacing: -12px; }
+.portrait-light { position: absolute; inset: 0; background: radial-gradient(ellipse at 45% 25%, #bf905529, transparent 69%); }
+.dossier-character-conan .portrait-light { background: radial-gradient(ellipse at 60% 35%, #55a3cb28, transparent 70%); }
+.dossier-character-figure { position: absolute; width: 93%; height: 152%; top: 0; left: 4%; }
+.dossier-character-figure .character-plane { animation: portrait-entrance 1.1s var(--ease) both, character-breath 10s 1.1s ease-in-out infinite; }
+.dossier-character-conan .dossier-character-figure { height: 161%; width: 95%; top: 1%; left: 0; }
+.portrait-vignette { position: absolute; inset: 0; background: linear-gradient(0deg, #121c19 0, #121c19d9 9%, transparent 38%), linear-gradient(90deg, #121c1960, transparent 30%, transparent 70%, #121c19a0); pointer-events: none; }
+.dossier-character-conan .portrait-vignette { background: linear-gradient(0deg, #132028 0, #132028c9 9%, transparent 35%), linear-gradient(90deg, #13202880, transparent 30%, transparent 70%, #13202890); }
+.portrait-location { position: absolute; top: 21px; right: 22px; color: #b6ac88; font-size: 5px; letter-spacing: 1.4px; writing-mode: vertical-rl; display: flex; gap: 10px; align-items: center; }
+.portrait-location > span { height: 20px; width: 1px; background: currentColor; opacity: .5; }
+.portrait-name { position: absolute; left: 25px; bottom: 20px; display: flex; flex-direction: column; gap: 7px; }
+.portrait-name span { font: 400 5px var(--sans); letter-spacing: 2px; color: #929a81; }
+.portrait-name strong { font: 400 26px var(--song); letter-spacing: 3px; color: #e1cba2; }
+.portrait-name i { font: italic 13px var(--serif); letter-spacing: 2px; color: #b4a98d; }
+.dossier-character-conan .portrait-name strong { color: #bfd9e7; }
+.dossier-character-conan .portrait-name i { color: #88b0c9; }
+
+@keyframes holmes-entrance { from { opacity: 0; transform: translate3d(-28px, 17px, 0) scale(1.045); clip-path: inset(0 100% 0 0); } 36% { opacity: 1; } to { opacity: 1; transform: none; clip-path: inset(0); } }
+@keyframes conan-entrance { from { opacity: 0; transform: translate3d(24px, 25px, 0) scale(.96); clip-path: inset(0 0 0 100%); } 35% { opacity: 1; } to { opacity: 1; transform: none; clip-path: inset(0); } }
+@keyframes character-breath { 0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); } 50% { transform: translate3d(0, -3px, 0) rotate(.18deg); } }
+@keyframes character-light { 0%, 22% { background-position: 130% 0; opacity: 0; } 28% { opacity: .19; } 45%, 100% { background-position: -25% 0; opacity: 0; } }
+@keyframes lens-glint { 0%, 18%, 34%, 100% { opacity: 0; transform: rotate(-35deg) scaleX(.15); } 25% { opacity: .75; transform: rotate(-35deg) scaleX(1); } }
+@keyframes golden-projector { from { transform: rotate(-29deg); opacity: .15; } to { transform: rotate(-20deg); opacity: .38; } }
+@keyframes blue-projector { from { transform: rotate(22deg); opacity: .15; } to { transform: rotate(32deg); opacity: .36; } }
+@keyframes narrator-enter { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: none; } }
+@keyframes portrait-entrance { from { opacity: 0; transform: translateX(-16px) scale(1.04); } to { opacity: 1; transform: none; } }
+
+@media (min-width: 1000px) and (max-height: 800px) {
+  .character-cinema { top: 3px; bottom: 98px; right: 3%; width: 47%; }
+  .cinema-topline { height: 25px; }
+  .cinema-controls { height: 35px; padding-top: 5px; gap: 16px; }
+  .cinema-controls > button { font-size: 9px; }
+  .cinema-title-card { bottom: 8px; }
+  .cinema-title-card p { font-size: 11px; margin-top: 4px; }
+  .home .hero-display { font-size: clamp(78px, 8vw, 110px); }
+  .portrait-view-switch { margin-top: 9px; }
+  .portrait-stage { min-height: 215px; }
+  .detective-narrator { height: 82px; width: 255px; gap: 7px; }
+  .narrator-portrait { height: 90px; width: 77px; }
+  .narrator-portrait .character-plane { top: -3px; left: -28px; }
+  .narrator-conan .narrator-portrait .character-plane { top: -22px; left: -45px; }
+  .narrator-lines strong { font-size: 11px; }
+}
+@media (min-width: 1001px) and (max-height: 760px) {
+  .case-archive .archive-heading { margin-bottom: 8px; }
+  .case-archive .archive-filter { margin-bottom: 17px; }
+  .case-archive .archive-endnote { margin-top: 8px; }
+}
+@media (min-width: 700px) and (max-width: 999px) {
+  .home-copy { width: 58%; }
+  .home .hero-display { font-size: 80px; }
+  .character-cinema { width: 51%; right: 0; top: 14%; bottom: 135px; }
+  .cinema-topline { font-size: 5px; letter-spacing: 1px; padding: 0 6px; }
+  .cinema-topline i { display: none; }
+  .cinema-stage { min-height: 340px; }
+  .cinema-holmes { width: 89%; left: -10%; }
+  .cinema-conan { width: 70%; right: -8%; }
+  .route-home .optic-scene { opacity: .14; }
+  .cinema-controls { gap: 12px; padding-left: 8px; padding-right: 8px; }
+  .cinema-controls > button { font-size: 9px; gap: 3px; }
+  .cinema-title-card { left: 8%; padding-left: 10px; }
+  .cinema-title-card p { font-size: 11px; letter-spacing: 0; }
+  .cinema-title-card span { font-size: 5px; letter-spacing: 1.4px; }
+  .detective-narrator { width: 240px; gap: 4px; }
+  .narrator-lines strong { font-size: 11px; }
+  .portrait-stage { min-height: 280px; }
+  .artifact-vault { height: auto; min-height: 0; }
+  .artifact-stage { flex: none; height: 320px; }
+}
+@media (max-width: 699px) {
+  .home { height: auto; min-height: 0; padding-bottom: 20px; display: flex; flex-direction: column; }
+  .home-copy { width: 100%; margin: 0; flex-shrink: 0; }
+  .home .hero-display { font-size: clamp(66px, 19.4vw, 95px); }
+  .character-cinema { position: relative; right: auto; top: auto; bottom: auto; width: calc(100% + 28px); margin: 21px -14px 20px; height: 425px; flex-shrink: 0; }
+  .cinema-topline { height: 27px; font-size: 5px; letter-spacing: 1.2px; }
+  .cinema-stage { min-height: 0; }
+  .cinema-holmes { height: 112%; width: 77%; left: -5%; }
+  .cinema-conan { width: 59%; right: -3%; }
+  .cinema-controls { gap: 16px; padding: 7px 13px 0; height: 43px; }
+  .cinema-controls > button { font-size: 9px; }
+  .cinema-title-card { left: 9%; bottom: 10px; padding-left: 10px; min-height: 37px; }
+  .cinema-title-card span { font-size: 5px; letter-spacing: 1.4px; }
+  .cinema-title-card p { font-size: 11px; letter-spacing: .6px; margin-top: 5px; }
+  .home .latest-case { position: relative; left: auto; right: auto; bottom: auto; width: 100%; margin: 0; flex-shrink: 0; }
+  .route-home .optic-scene { opacity: .14; }
+  .page-heading, .archive-heading { position: relative; }
+  .detective-narrator { width: 72px; height: 85px; position: absolute; right: -4px; top: -19px; pointer-events: auto; }
+  .narrator-lines { display: none; }
+  .narrator-portrait { width: 72px; height: 87px; }
+  .narrator-portrait .character-plane { width: 130px; height: 195px; top: -4px; left: -27px; }
+  .narrator-conan .narrator-portrait .character-plane { width: 145px; height: 217px; top: -17px; left: -35px; }
+  .archive-heading h1, .page-heading h1 { position: relative; z-index: 1; }
+  .page-heading .eyebrow, .archive-heading .chapter-label { max-width: calc(100% - 68px); }
+  .portrait-stage { min-height: 300px; }
+  .portrait-name { left: 22px; bottom: 18px; }
+  .portrait-name strong { font-size: 24px; }
+  .portrait-view-switch { margin: 12px 22px 0; }
+  .portrait-view-switch > span { font-size: 4px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .character-plane, .character-light-pass, .cinema-beam, .character-optics > i { animation: none !important; }
+  .cinema-person, .cinema-characters { transition: none; }
+}
+:root[data-paused="true"] .cinema-characters { transform: none; }
+:root[data-paused="true"] .cinema-person { transition: none; }

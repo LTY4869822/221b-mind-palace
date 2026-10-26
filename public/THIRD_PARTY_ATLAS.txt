@@ -1,0 +1,9 @@
+Natural Earth coastline data
+
+Dataset: ne_110m_land, simplified to two decimal places for this decorative atlas.
+Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson
+License: Public domain.
+Terms: https://www.naturalearthdata.com/about/terms-of-use/
+
+The interactive atlas implementation is authored for this website. It does not
+include Ansyn's source code, photographs, branding, or personal location history.

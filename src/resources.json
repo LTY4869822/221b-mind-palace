@@ -1,0 +1,702 @@
+[
+  {
+    "name": "shadcn/ui",
+    "url": "https://ui.shadcn.com/",
+    "category": "组件库",
+    "tags": "基础组件 · 源码可改 · 统一样式",
+    "description": "按钮、表单、弹窗等常用部件比较齐，组件源码可以放进项目里继续修改。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://ui.shadcn.com/"
+  },
+  {
+    "name": "Aceternity UI",
+    "url": "https://ui.aceternity.com/",
+    "category": "组件库",
+    "tags": "立体卡片 · 光效背景 · 视觉动效",
+    "description": "聚光灯、背景光束、立体卡片这类视觉效果比较有辨识度，适合放在首屏或重点展示区域。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://ui.aceternity.com/"
+  },
+  {
+    "name": "Magic UI",
+    "url": "https://magicui.design/",
+    "category": "组件库",
+    "tags": "文字动画 · 数字滚动 · 动态边框",
+    "description": "以 React 和 Tailwind CSS 为主的动效组件库，适合给首屏标题、数据展示和按钮增加细节。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://magicui.design/"
+  },
+  {
+    "name": "React Bits",
+    "url": "https://reactbits.dev/",
+    "category": "组件库",
+    "tags": "文字动画 · 动态背景 · 参数可调",
+    "description": "可以挑选文字变化、背景动画等效果，并选择适合项目的代码版本。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://reactbits.dev/"
+  },
+  {
+    "name": "Cult UI",
+    "url": "https://cult-ui.com/",
+    "category": "组件库",
+    "tags": "特色卡片 · 设备模型 · shadcn 组件",
+    "description": "围绕 shadcn/ui 提供带设计感的组件，卡片、设备展示和动效适合用来呈现作品。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.cult-ui.com/"
+  },
+  {
+    "name": "KokonutUI",
+    "url": "https://kokonutui.com/",
+    "category": "组件库",
+    "tags": "交互组件 · AI 界面 · 页面区块",
+    "description": "有按钮、导航、卡片等组件，也能找到聊天输入等 AI 产品界面的参考。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://kokonutui.com/"
+  },
+  {
+    "name": "HyperUI",
+    "url": "https://hyperui.dev/",
+    "category": "组件库",
+    "tags": "Tailwind CSS · 营销区块 · 应用组件",
+    "description": "按营销网站、应用界面等用途整理 Tailwind CSS 组件，适合先搭页面结构。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://hyperui.dev/"
+  },
+  {
+    "name": "Float UI",
+    "url": "https://floatui.com/",
+    "category": "组件库",
+    "tags": "响应式组件 · 多框架 · 网站模板",
+    "description": "提供 Tailwind CSS 组件和模板，可按项目需要选择 HTML、React、Vue 等版本。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://floatui.com/"
+  },
+  {
+    "name": "Park UI",
+    "url": "https://park-ui.com/",
+    "category": "组件库",
+    "tags": "设计系统 · Ark UI · Panda CSS",
+    "description": "基于 Ark UI 和 Panda CSS 构建组件，适合给项目建立一套统一的界面规范。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://park-ui.com/"
+  },
+  {
+    "name": "Tailwind UI",
+    "url": "https://tailwindui.com/",
+    "category": "组件库",
+    "tags": "现 Tailwind Plus · 官方区块 · 付费模板",
+    "description": "现在名为 Tailwind Plus，是 Tailwind 官方的组件和模板资源，适合希望直接使用成套设计的人。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://tailwindcss.com/plus/login"
+  },
+  {
+    "name": "shadcn blocks",
+    "url": "https://ui.shadcn.com/blocks",
+    "category": "组件库",
+    "tags": "官方区块 · 侧边导航 · 登录与后台",
+    "description": "这是 shadcn/ui 官方的 Blocks 页面，比单个按钮更完整，可以直接参考一整段页面结构。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://ui.shadcn.com/blocks"
+  },
+  {
+    "name": "shadcnblocks.com",
+    "url": "https://www.shadcnblocks.com/",
+    "category": "组件库",
+    "tags": "营销页面 · 成段区块 · shadcn 生态",
+    "description": "这是第三方区块库，围绕 shadcn/ui 提供首屏、功能介绍、价格和评价等页面区块，便于搭出完整落地页。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.shadcnblocks.com/"
+  },
+  {
+    "name": "21st.dev",
+    "url": "https://21st.dev/",
+    "category": "组件库",
+    "tags": "组件集合 · 页面区块 · AI 提示词",
+    "description": "可以集中比较不同作者做的导航、首屏、卡片等组件，组件页提供交给 AI 工具使用的接入提示词。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://21st.dev/"
+  },
+  {
+    "name": "Origin UI",
+    "url": "https://originui.com/",
+    "category": "组件库",
+    "tags": "现 coss ui · Base UI · 基础界面组件",
+    "description": "原入口现转到 coss ui，可以查找基于 Base UI 的界面组件和不同变体。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://coss.com/ui"
+  },
+  {
+    "name": "Skiper UI",
+    "url": "https://skiper-ui.com/",
+    "category": "组件库",
+    "tags": "创意交互 · 图片揭示 · 鼠标效果",
+    "description": "偏向有表现力的交互组件，可以找到图片揭示、拖动、滚动和鼠标跟随等效果。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://skiper-ui.com/"
+  },
+  {
+    "name": "Motion",
+    "url": "https://motion.dev/",
+    "category": "动效与交互",
+    "tags": "淡入淡出 · 拖拽交互 · 布局过渡",
+    "description": "适合处理按钮反馈、卡片展开、元素进出场等界面动画，让页面状态切换更自然。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://motion.dev/"
+  },
+  {
+    "name": "GSAP",
+    "url": "https://gsap.com/",
+    "category": "动效与交互",
+    "tags": "动画时间轴 · 滚动联动 · 多元素编排",
+    "description": "适合安排一连串动画，比如标题先出现、图片随后移动、背景随着滚动变化。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://gsap.com/"
+  },
+  {
+    "name": "Anime.js",
+    "url": "https://animejs.com/",
+    "category": "动效与交互",
+    "tags": "JavaScript 动画 · SVG 路径 · 动作编排",
+    "description": "可以通过代码控制网页元素、SVG 图形等的运动，适合需要精细调整的局部动画。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://animejs.com/"
+  },
+  {
+    "name": "LottieFiles",
+    "url": "https://lottiefiles.com/",
+    "category": "动效与交互",
+    "tags": "矢量动画 · 动画素材 · 加载反馈",
+    "description": "可以查找和预览 Lottie 动画，也提供编辑与交付工具，适合加载、成功提示等小动画。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://lottiefiles.com/"
+  },
+  {
+    "name": "Shadertoy",
+    "url": "https://www.shadertoy.com/",
+    "category": "动效与交互",
+    "tags": "着色器作品 · 流体光效 · 程序化视觉",
+    "description": "社区创作者用着色器代码制作噪声、流体、光影等视觉效果，可以边看作品边研究代码。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://www.shadertoy.com/"
+  },
+  {
+    "name": "The Book of Shaders",
+    "url": "https://thebookofshaders.com/",
+    "category": "动效与交互",
+    "tags": "着色器入门 · 图形原理 · 互动示例",
+    "description": "这是讲解着色器原理的教程，适合理解渐变、形状、噪声等效果是怎样画出来的。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://thebookofshaders.com/"
+  },
+  {
+    "name": "Three.js Examples",
+    "url": "https://threejs.org/examples",
+    "category": "动效与交互",
+    "tags": "官方 3D 示例 · 材质光照 · 场景交互",
+    "description": "Three.js 官方示例目录，可以按效果查看材质、灯光、模型和交互的实现。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://threejs.org/examples/"
+  },
+  {
+    "name": "Spline",
+    "url": "https://spline.design/",
+    "category": "动效与交互",
+    "tags": "可视化 3D · 鼠标互动 · 网页嵌入",
+    "description": "可以在浏览器里编辑 3D 物体和场景，再给它们设置点击、鼠标跟随等互动。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://spline.design/"
+  },
+  {
+    "name": "Rive",
+    "url": "https://rive.app/",
+    "category": "动效与交互",
+    "tags": "交互动画 · 状态切换 · 点击反馈",
+    "description": "把图形设计、动画和交互逻辑放在一起，适合制作会响应操作的图标、按钮或角色。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://rive.app/"
+  },
+  {
+    "name": "Godly",
+    "url": "https://godly.website/",
+    "category": "首屏与布局",
+    "tags": "现 Recent · 创意网页 · 品牌视觉",
+    "description": "Godly 的入口现转到 Recent，可以浏览网页、界面、品牌和动效等设计案例。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://recent.design/?ref=godly"
+  },
+  {
+    "name": "Land-book",
+    "url": "https://land-book.com/",
+    "category": "首屏与布局",
+    "tags": "行业筛选 · 风格筛选 · 页面区块",
+    "description": "可以按行业、网站类型和视觉风格找案例，也有拆开的页面区块可看。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://land-book.com/"
+  },
+  {
+    "name": "Lapa Ninja",
+    "url": "https://www.lapa.ninja/",
+    "category": "首屏与布局",
+    "tags": "落地页合集 · 行业分类 · 首屏参考",
+    "description": "按类别收集落地页案例，适合比较同一种业务有哪些不同的页面表达。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://www.lapa.ninja/"
+  },
+  {
+    "name": "One Page Love",
+    "url": "https://onepagelove.com/",
+    "category": "首屏与布局",
+    "tags": "单页网站 · 个人作品集 · 内容结构",
+    "description": "重点收录单页网站，适合参考个人主页、作品集、活动页怎样在一页里把事情说清楚。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://onepagelove.com/"
+  },
+  {
+    "name": "SaaS Landing Page",
+    "url": "https://saaslandingpage.com/",
+    "category": "首屏与布局",
+    "tags": "软件官网 · 功能介绍 · 定价区块",
+    "description": "围绕软件产品收集官网和营销页面，也适合参考功能、定价、常见问题等区块。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://saaslandingpage.com/"
+  },
+  {
+    "name": "httpster",
+    "url": "https://httpster.net/",
+    "category": "首屏与布局",
+    "tags": "独立网站 · 大图展示 · 风格参考",
+    "description": "精选具有鲜明视觉风格的网站，适合观察图片、文字和页面构图的整体关系。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://httpster.net/"
+  },
+  {
+    "name": "Awwwards",
+    "url": "https://www.awwwards.com/",
+    "category": "首屏与布局",
+    "tags": "获奖网站 · 创意交互 · 滚动体验",
+    "description": "适合看完成度较高的网站，以及滚动、鼠标操作和画面变化怎样配合。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.awwwards.com/"
+  },
+  {
+    "name": "CSS Design Awards",
+    "url": "https://www.cssdesignawards.com/",
+    "category": "首屏与布局",
+    "tags": "获奖网站 · 视觉设计 · 交互体验",
+    "description": "通过网站评选展示视觉、体验和创新方面突出的作品，适合寻找有特点的表现方式。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.cssdesignawards.com/"
+  },
+  {
+    "name": "SiteInspire",
+    "url": "https://www.siteinspire.com/",
+    "category": "首屏与布局",
+    "tags": "风格筛选 · 网站类型 · 排版参考",
+    "description": "按风格、类型等维度组织网页案例，适合从大量网站里缩小自己的参考范围。",
+    "available": false,
+    "status": 429,
+    "finalUrl": "https://www.siteinspire.com/"
+  },
+  {
+    "name": "Minimal Gallery",
+    "url": "https://minimal.gallery/",
+    "category": "首屏与布局",
+    "tags": "精选案例 · 字体层级 · 留白比例",
+    "description": "适合集中观察文字、图片和空白怎么安排，也能按个人网站、作品集等类型查找。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://minimal.gallery/"
+  },
+  {
+    "name": "MotionSites",
+    "url": "https://motionsites.ai/",
+    "category": "首屏与布局",
+    "tags": "AI 网页提示词 · 首屏设计 · 动效参考",
+    "description": "提供带视觉预览的 AI 网页设计提示词，可以按首屏、定价等页面区块寻找方向。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://motionsites.ai/"
+  },
+  {
+    "name": "Variant",
+    "url": "https://variant.fun/",
+    "category": "首屏与布局",
+    "tags": "网页设计探索 · 风格参考 · 入口待确认",
+    "description": "作为网页设计与风格探索入口保留。本次未能正常打开这个地址，当前功能和可用状态暂未确认。",
+    "available": false,
+    "status": null,
+    "finalUrl": "https://variant.fun/"
+  },
+  {
+    "name": "Mobbin",
+    "url": "https://mobbin.com/",
+    "category": "移动端 UI",
+    "tags": "真实产品 · 界面检索 · 设计模式",
+    "description": "收录已上线产品的界面与流程，适合横向比较同一种页面有哪些做法。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://mobbin.com/"
+  },
+  {
+    "name": "Page Flows",
+    "url": "https://pageflows.com/",
+    "category": "移动端 UI",
+    "tags": "操作录屏 · 步骤注释 · 完整流程",
+    "description": "重点看一件事怎样完成，例如用户从哪里进入注册、填完后看到什么、下一步去哪里。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://pageflows.com/"
+  },
+  {
+    "name": "screenlane",
+    "url": "https://screenlane.com/",
+    "category": "移动端 UI",
+    "tags": "真实界面参考 · 旧站入口 · 已并入 Page Flows",
+    "description": "原先用于收集网页和移动端界面，后来与 Page Collective 合并为 Page Flows。旧链接保留在这里，当前可以直接用 Page Flows。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://pageflows.com/"
+  },
+  {
+    "name": "UI Sources",
+    "url": "https://www.uisources.com/",
+    "category": "移动端 UI",
+    "tags": "现 ScreensDesign · App 界面 · 流程录屏",
+    "description": "原入口现转到 ScreensDesign，适合看真实 App 的界面和连续操作过程。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://screensdesign.com/"
+  },
+  {
+    "name": "Refero",
+    "url": "https://refero.design/",
+    "category": "移动端 UI",
+    "tags": "真实产品 · 网页与 App · 信息布局",
+    "description": "收集真实产品的界面参考，适合比较内容较多的页面怎样安排导航、信息和操作。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://refero.design/"
+  },
+  {
+    "name": "CodePen",
+    "url": "https://codepen.io/",
+    "category": "设计灵感",
+    "tags": "在线预览 · 代码实验 · 复制修改",
+    "description": "能一边看网页效果，一边看实现代码，适合研究按钮、加载动画、鼠标悬停等局部效果。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://codepen.io/"
+  },
+  {
+    "name": "Codrops",
+    "url": "https://tympanus.net/codrops",
+    "category": "设计灵感",
+    "tags": "交互教程 · 效果演示 · 实现思路",
+    "description": "适合从一个视觉效果继续往下看，了解它是怎样做出来的；部分教程附有演示和示例代码。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://tympanus.net/codrops/"
+  },
+  {
+    "name": "UI Movement",
+    "url": "https://uimovement.com/",
+    "category": "设计灵感",
+    "tags": "交互灵感 · 旧站名称 · UI 细节",
+    "description": "这是早期的 UI 动效灵感站，后来更名为 Screenlane，后续资源又并入 Page Flows。这里保留旧入口，查看现有流程可用 Page Flows。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://pageflows.com/"
+  },
+  {
+    "name": "Dribbble",
+    "url": "https://dribbble.com/",
+    "category": "设计灵感",
+    "tags": "设计作品 · 界面构图 · 品牌视觉",
+    "description": "适合比较设计师怎样处理颜色、卡片、插画和界面展示，也可以找品牌表达的方向。",
+    "available": false,
+    "status": 202,
+    "finalUrl": "https://dribbble.com/"
+  },
+  {
+    "name": "Behance",
+    "url": "https://www.behance.net/",
+    "category": "设计灵感",
+    "tags": "完整项目 · 品牌设计 · 作品呈现",
+    "description": "设计师以完整项目展示品牌、界面和视觉成果，比单张效果图更适合研究一套设计怎样展开。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://www.behance.net/"
+  },
+  {
+    "name": "CSS Gradient",
+    "url": "https://cssgradient.io/",
+    "category": "配色与素材",
+    "tags": "渐变生成 · 角度调整 · CSS 代码",
+    "description": "可以在页面上调整渐变色标、位置和角度，同时查看预览与生成的 CSS。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://cssgradient.io/"
+  },
+  {
+    "name": "uiGradients",
+    "url": "https://uigradients.com/",
+    "category": "配色与素材",
+    "tags": "现成渐变 · 整屏预览 · 颜色组合",
+    "description": "适合在没有配色方向时浏览现成的渐变，用大面积预览判断颜色搭配是否合适。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://uigradients.com/"
+  },
+  {
+    "name": "Coolors",
+    "url": "https://coolors.co/",
+    "category": "配色与素材",
+    "tags": "配色生成 · 锁定主色 · 图片取色",
+    "description": "适合从一个已有颜色继续搭配，也能从喜欢的图片里提取配色。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://coolors.co/"
+  },
+  {
+    "name": "Realtime Colors",
+    "url": "https://realtimecolors.com/",
+    "category": "配色与素材",
+    "tags": "网页预览 · 配色试搭 · 字体搭配",
+    "description": "把颜色和字体直接放进示例网页里，方便看它们用在标题、正文和按钮上是什么效果。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.realtimecolors.com/"
+  },
+  {
+    "name": "TweakCN",
+    "url": "https://tweakcn.com/",
+    "category": "配色与素材",
+    "tags": "主题编辑 · shadcn 配套 · 可视化调整",
+    "description": "适合使用 shadcn/ui 的项目，在可视化界面里调整和比较组件主题。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://tweakcn.com/"
+  },
+  {
+    "name": "Hero Patterns",
+    "url": "https://heropatterns.com/",
+    "category": "配色与素材",
+    "tags": "SVG 纹理 · 重复背景 · 透明度可调",
+    "description": "提供可重复铺开的 SVG 图案，可以调整前景色、背景色和透明度。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://heropatterns.com/"
+  },
+  {
+    "name": "Hero Icons",
+    "url": "https://heroicons.com/",
+    "category": "配色与素材",
+    "tags": "Tailwind 团队 · SVG 图标 · 轮廓与实心",
+    "description": "由 Tailwind CSS 团队制作的图标库，可以直接使用 SVG，也有 React、Vue 等接入方式。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://heroicons.com/"
+  },
+  {
+    "name": "Lucide",
+    "url": "https://lucide.dev/",
+    "category": "配色与素材",
+    "tags": "线性图标 · 风格统一 · 颜色粗细可调",
+    "description": "图标遵循统一的设计规则，适合导航、功能介绍和操作按钮。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://lucide.dev/"
+  },
+  {
+    "name": "Phosphor Icons",
+    "url": "https://phosphoricons.com/",
+    "category": "配色与素材",
+    "tags": "多种字重 · 图标系列 · 风格统一",
+    "description": "同一个图标提供多种线条粗细和表现形式，便于匹配轻巧、厚重等不同页面气质。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://phosphoricons.com/"
+  },
+  {
+    "name": "unDraw",
+    "url": "https://undraw.co/",
+    "category": "配色与素材",
+    "tags": "场景插画 · 主色可改 · 品牌配图",
+    "description": "有工作、学习、协作等场景插画，可以调整主色来搭配网站。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://undraw.co/"
+  },
+  {
+    "name": "Storyset",
+    "url": "https://storyset.com/",
+    "category": "配色与素材",
+    "tags": "场景插画 · 风格可选 · 在线改色与动画",
+    "description": "按场景提供插画，可以切换画风、修改颜色和背景，也能在在线编辑器里添加动画。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://storyset.com/"
+  },
+  {
+    "name": "Pexels",
+    "url": "https://www.pexels.com/",
+    "category": "配色与素材",
+    "tags": "摄影图片 · 视频素材 · 场景搜索",
+    "description": "可以按主题寻找照片和视频，适合补充人物、空间、工作过程等真实场景画面。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://www.pexels.com/"
+  },
+  {
+    "name": "Unsplash",
+    "url": "https://unsplash.com/",
+    "category": "配色与素材",
+    "tags": "摄影素材 · 氛围图片 · 主题搜索",
+    "description": "摄影素材涵盖人物、建筑、自然和工作场景，适合确定网站的画面气质。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://unsplash.com/"
+  },
+  {
+    "name": "v0",
+    "url": "https://v0.dev/",
+    "category": "AI 建站",
+    "tags": "界面生成 · 网站应用 · Vercel 生态",
+    "description": "Vercel 出品，可以通过描述和参考材料生成网页界面，继续补功能，并预览、发布网站应用。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://v0.app/"
+  },
+  {
+    "name": "Lovable",
+    "url": "https://lovable.dev/",
+    "category": "AI 建站",
+    "tags": "对话建站 · 可视化修改 · 功能整合",
+    "description": "适合通过聊天搭建网站，也能在预览中继续调整页面元素、补充表单或账号等功能。",
+    "available": false,
+    "status": 403,
+    "finalUrl": "https://lovable.dev/"
+  },
+  {
+    "name": "Bolt.new",
+    "url": "https://bolt.new/",
+    "category": "AI 建站",
+    "tags": "浏览器开发 · 运行预览 · 代码编辑",
+    "description": "可以在浏览器里生成、运行和修改项目，也能在聊天修改与代码编辑之间切换。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://bolt.new/"
+  },
+  {
+    "name": "Google Stitch",
+    "url": "https://stitch.withgoogle.com/",
+    "category": "AI 建站",
+    "tags": "界面设计 · 方案探索 · 交互原型",
+    "description": "适合先探索网页或 App 的界面方向，再整理页面之间的连接和交互。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://stitch.withgoogle.com/"
+  },
+  {
+    "name": "Figma Make",
+    "url": "https://www.figma.com/make",
+    "category": "AI 建站",
+    "tags": "Figma 生态 · AI 原型 · 可交互页面",
+    "description": "可以通过提示词创建可交互的原型，也适合把已有 Figma 设计继续变成能操作的页面。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.figma.com/make/"
+  },
+  {
+    "name": "Subframe",
+    "url": "https://www.subframe.com/",
+    "category": "AI 建站",
+    "tags": "设计画布 · 浏览器预览 · 编码代理",
+    "description": "把可视化设计、浏览器预览和编码代理放在一起，适合边看页面边调整设计与实现。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.subframe.com/"
+  },
+  {
+    "name": "Galileo AI",
+    "url": "https://www.usegalileo.ai/",
+    "category": "AI 建站",
+    "tags": "原 AI 界面工具 · 已转至 Stitch · 旧入口保留",
+    "description": "原 Galileo AI 地址目前会转到 Google Stitch。这两个入口现在指向同一工具。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://stitch.withgoogle.com/"
+  },
+  {
+    "name": "UI Skills",
+    "url": "https://www.ui-skills.com/skills",
+    "category": "设计 Skill",
+    "tags": "Skill 目录 · 分类查找 · 设计工程",
+    "description": "这是查找设计相关 Skill 的目录，可以按需要挑规则和能力。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://www.ui-skills.com/skills"
+  },
+  {
+    "name": "Anthropic frontend-design",
+    "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+    "category": "设计 Skill",
+    "tags": "前端设计 · 视觉方向 · 页面实现",
+    "description": "Anthropic 官方提供的前端设计 Skill，帮助 AI 在做页面时考虑字体、配色、布局和视觉表达。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://github.com/anthropics/skills/tree/main/skills/frontend-design"
+  },
+  {
+    "name": "pbakaus 设计 Skill",
+    "url": "https://github.com/pbakaus",
+    "category": "设计 Skill",
+    "tags": "Impeccable · 设计审查 · 细节精修",
+    "description": "可以从作者主页找到 Impeccable 等设计项目；Impeccable 提供面向 AI 编程助手的设计审查和改进指令。",
+    "available": true,
+    "status": 200,
+    "finalUrl": "https://github.com/pbakaus"
+  },
+  {
+    "name": "z1han 提示词库",
+    "url": "https://ai.z1han.com/prompt",
+    "category": "设计 Skill",
+    "tags": "提示词资料 · 网页需求 · 表达参考",
+    "description": "提供提示词参考，适合借鉴如何向 AI 说明设计方向、页面结构和实现要求。",
+    "available": false,
+    "status": 200,
+    "finalUrl": "https://ai.z1han.com/prompt"
+  }
+]

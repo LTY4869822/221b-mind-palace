@@ -1,0 +1,110 @@
+/* V11: one film palette, three distinct ways of following a clue. */
+.home-copy{background:none;box-shadow:none;backdrop-filter:none}
+.route-home .film-scene{opacity:.82}
+.route-home .film-scene video{filter:saturate(.62) brightness(.75)}
+.route-home .scene-shade{background:linear-gradient(90deg,#08101482,#08101462 43%,#08101424 75%),linear-gradient(0deg,#0b0e11d9,transparent 38%,transparent 82%,#0b0e1155)}
+.home .hero-display{text-shadow:0 2px 30px #09101466}
+.home-description{color:#bac0b8}
+.clue-beam{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:visible}
+.deduction-orbit{position:absolute;inset:-4% -3%;z-index:0;pointer-events:none;opacity:.36}
+.deduction-orbit svg{width:100%;height:100%;stroke:#b6a47b;stroke-width:.6}
+.deduction-orbit circle{stroke:#8fb1bb;opacity:.55}
+.cinema-stage:before{background:radial-gradient(ellipse at 32% 44%,#ad784831,transparent 65%),radial-gradient(ellipse at 85% 70%,#358eac28,transparent 60%)}
+.cinema-clues{position:absolute;inset:0;z-index:6;pointer-events:none}
+.city-clue{position:absolute;display:flex;flex-direction:column;align-items:center;gap:9px;color:#cebd9b;pointer-events:auto;padding:8px;min-width:48px;min-height:66px}
+.clue-london{left:0;top:19%}.clue-beika{right:0;top:7%;color:#9abdcf}
+.city-clue>span{font:italic 18px/1 var(--serif)}
+.city-clue>i{width:6px;height:6px;border:1px solid currentColor;border-radius:50%;box-shadow:0 0 0 5px #ac90691c;transition:box-shadow .3s}
+.city-clue>small{font:6px/1 var(--sans);letter-spacing:1.7px}
+.city-clue:hover>i,.city-clue[aria-pressed=true]>i{box-shadow:0 0 0 10px #ac90691c,0 0 20px #d5b98c55;background:currentColor}
+.deduction-answer{position:absolute;left:44%;top:79%;display:flex;align-items:center;gap:10px;padding:9px 0;pointer-events:auto;color:#c4c6af;text-shadow:0 2px 8px #080e13}
+.deduction-answer>span{font:6px/1.6 var(--sans);letter-spacing:1.2px}
+.deduction-answer svg{color:#d2b484;transition:transform .3s}.deduction-answer:hover svg{transform:translate(3px,-3px)}
+.optical-cut{position:absolute;inset:9% 6%;border-radius:50%;border:1px solid #c6b79080;box-shadow:0 0 25px #b9ad7b12,inset 0 0 30px #6cabc013;z-index:7;pointer-events:none}
+.cinema-focus-conan .optical-cut{border-color:#8ec6e785}
+.cinema-architecture{opacity:.18}
+.cinema-haze{background:linear-gradient(0deg,#0b0e11 0,#0b0e11a6 6%,transparent 26%),linear-gradient(90deg,#0b0e1166,transparent 13%,transparent 94%,#0b0e1166)}
+.cinema-focus-holmes .deduction-orbit{color:#c6a16b}.cinema-focus-conan .deduction-orbit{color:#8db6c9}
+
+/* The gallery becomes an optical bench. Its lens uses the existing WebGL draw. */
+.gallery-space-label{min-height:35px;gap:12px}
+.inspection-switch{gap:0;margin-left:auto;border:1px solid #b29e7629;border-radius:3px;flex-shrink:0}
+.inspection-switch .nova-toggle{display:flex;align-items:center;justify-content:center;gap:5px;min-height:29px;padding:5px 9px;color:#83938f;font-size:9px;border-radius:2px}
+.inspection-switch .nova-toggle[aria-pressed=true]{color:#d6c59f;background:#ad966c15}
+.is-inspecting .inspection-switch .nova-toggle[aria-pressed=true]{color:#aed3e4;background:#7ab7d014}
+.darkroom-viewfinder{position:absolute;inset:9% 12%;pointer-events:none;opacity:0;transition:opacity .55s;color:#8ebdce}
+.is-inspecting .darkroom-viewfinder{opacity:.7}
+.darkroom-viewfinder>i{position:absolute;width:17px;height:17px;border-color:currentColor}
+.darkroom-viewfinder>i:nth-child(1){top:0;left:0;border-left:1px solid;border-top:1px solid}
+.darkroom-viewfinder>i:nth-child(2){top:0;right:0;border-right:1px solid;border-top:1px solid}
+.darkroom-viewfinder>i:nth-child(3){bottom:0;left:0;border-left:1px solid;border-bottom:1px solid}
+.darkroom-viewfinder>i:nth-child(4){bottom:0;right:0;border-right:1px solid;border-bottom:1px solid}
+.darkroom-viewfinder>span{position:absolute;left:27px;top:-3px;font:6px var(--sans);letter-spacing:2px}
+.evidence-filmstrip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:9px 7px 6px;padding:7px 0;border-top:1px solid #b29e7623;height:auto;flex-shrink:0}
+.evidence-filmstrip>button{position:relative;display:flex;align-items:center;gap:9px;height:43px;min-height:43px;overflow:hidden;padding:4px;background:#b5a37e05;border:1px solid transparent;opacity:.58;transition:opacity .25s,border-color .25s,background .25s;text-align:left}
+.evidence-filmstrip>button:hover{opacity:1;background:#b5a37e0c}
+.evidence-filmstrip>button.active{opacity:1;border-color:#c8b08066;background:#b5a37e10}
+.evidence-filmstrip>button>img{width:52px;height:33px;object-fit:cover;filter:saturate(.4);transition:filter .3s;flex-shrink:0}
+.evidence-filmstrip>button.active>img{filter:none}
+.evidence-filmstrip>button>span{position:static;display:flex;flex-direction:column;gap:4px;width:auto;height:auto;transform:none;background:none!important;font:5px/1.4 var(--sans);color:#94a49c;letter-spacing:1px}
+.evidence-filmstrip>button>span>i{font:italic 16px/1 var(--serif);color:#d6bd8c}
+.evidence-filmstrip>button:after{display:none}
+.aigc-page .evidence-caption{min-height:49px;padding-top:7px}
+.evidence-filmstrip>button.active>span{height:auto;width:auto}
+.prompthub-card{position:relative;overflow:hidden}
+.prompthub-card:after{content:"";position:absolute;width:155px;height:155px;top:42px;left:50%;border:1px solid #c0a57820;border-radius:50%;translate:-50% 0;pointer-events:none}
+.hub-symbol{position:relative;z-index:1}
+
+/* Paper, ink and thread form a coherent physical transition between projects. */
+.case-desk{position:relative;isolation:isolate}
+.case-thread{z-index:3}
+.case-folder-tabs{position:absolute;left:0;right:0;top:-16px;height:32px;display:flex;gap:5px;align-items:stretch;z-index:4}
+.case-folder-tabs>button{display:flex;align-items:center;gap:8px;max-width:31%;padding:5px 17px 6px 13px;background:#605f50;color:#aeb5a1;font-size:8px;clip-path:polygon(0 0,92% 0,100% 100%,0 100%);transition:background .3s,color .3s;min-height:32px}
+.case-folder-tabs>button[aria-pressed=true]{background:#ded3bb;color:#3b4a39}
+.case-folder-tabs>button>b{font:italic 15px var(--serif);font-weight:400}
+.case-folder-tabs>button>span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.folder-pin{position:absolute;width:5px;height:5px;border-radius:50%;background:#93584b;left:4px;top:12px;pointer-events:none}
+.directory-file{position:relative}
+.directory-active-line{position:absolute;left:-1px;top:13%;bottom:13%;width:2px;background:#d5ba84;box-shadow:0 0 12px #c1a27333}
+.case-document{backface-visibility:hidden;will-change:auto}
+.case-ink-stamp{position:absolute;right:24px;top:57px;border:1px solid #944a3d65;padding:7px 9px 5px;color:#9b4f40;font:italic 17px/1 var(--serif);letter-spacing:1px;z-index:2;pointer-events:none;transform-origin:center}
+.case-ink-stamp>small{display:block;margin-top:4px;padding-top:4px;border-top:1px solid #944a3d40;font:4px var(--sans);letter-spacing:1.4px;text-align:center}
+.document-copy{padding-top:7px}
+.document-copy h2{margin:8px 0}
+.document-rule{margin:8px 0}
+.document-description{line-height:1.8;margin-bottom:10px}
+.document-tags{margin-bottom:8px}
+.document-case-no{margin-top:0}
+.document-top{background:linear-gradient(90deg,#f5ebd124,transparent)}
+.case-back-sheet{box-shadow:0 20px 40px #161c1980}
+.clue-card{transform-origin:50% 10%}
+.portrait-name{animation:portrait-caption .75s var(--ease) both}
+@keyframes portrait-caption{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+@media(min-width:1000px) and (max-height:800px){
+  .document-copy{padding-top:4px}.case-ink-stamp{top:46px;right:18px;font-size:14px;padding:5px 7px}.case-ink-stamp>small{font-size:3px}
+  .evidence-filmstrip>button{height:35px;min-height:35px}.evidence-filmstrip>button>img{height:25px;width:41px}
+  .evidence-filmstrip{margin-top:4px;padding-top:4px}.gallery-space-label{min-height:31px}
+}
+@media(min-width:700px) and (max-width:999px){
+  .city-clue{min-width:38px;padding:5px}.clue-london{left:-2%}.clue-beika{right:-1%}
+  .deduction-answer{left:32%;top:79%}.deduction-answer>span{font-size:5px}
+  .evidence-filmstrip>button>span{font-size:4px;letter-spacing:.4px}.evidence-filmstrip>button>img{width:34px}.evidence-filmstrip>button{gap:5px}
+  .gallery-space-label>span:first-child{display:none}.case-folder-tabs>button{padding-inline:9px}.case-folder-tabs>button>span{max-width:75px}
+  .case-ink-stamp{top:46px;right:16px;font-size:13px}.document-copy{padding-top:7px}
+}
+@media(max-width:699px){
+  .route-home .film-scene{opacity:.64}.route-home .scene-shade{background:linear-gradient(0deg,#0b0e11b3,transparent 55%),linear-gradient(90deg,#08101488,#08101422)}
+  .city-clue{gap:6px;min-height:55px}.clue-london{top:13%;left:1%}.clue-beika{top:5%;right:1%}.city-clue>small{font-size:5px}
+  .deduction-answer{left:31%;top:77%}.deduction-answer>span{font-size:5px;letter-spacing:1px}
+  .deduction-orbit{inset:0 -4%}.cinema-stage .clue-beam{opacity:.7}
+  .gallery-space-label{min-height:38px}.gallery-space-label>span:first-child{display:none}.inspection-switch{margin-left:0;margin-right:auto}
+  .inspection-switch .nova-toggle{font-size:10px;padding-inline:10px;min-height:32px}
+  .evidence-filmstrip{gap:5px;margin-inline:0}.evidence-filmstrip>button{height:55px;min-height:55px;gap:5px;padding:4px}
+  .evidence-filmstrip>button>img{width:42px;height:40px}.evidence-filmstrip>button>span{font-size:4px;letter-spacing:.3px}.evidence-filmstrip>button>span>i{font-size:14px}
+  .case-thread{display:none}.case-folder-tabs{top:-17px;height:32px;gap:3px}.case-folder-tabs>button{max-width:none;min-width:0;flex:1;padding:5px 8px;gap:5px;font-size:6px}
+  .case-folder-tabs>button>b{font-size:13px}.case-folder-tabs>button>span{max-width:65px}.folder-pin{display:none}
+  .case-ink-stamp{top:49px;right:19px;font-size:15px}.document-copy{padding-top:5px}.case-exhibit{margin-top:22px}
+}
+@media(prefers-reduced-motion:reduce){.optical-cut{display:none}.clue-card,.portrait-name{animation:none!important;transition:none!important}}
+:root[data-paused=true] .portrait-name{animation:none}

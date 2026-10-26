@@ -1,0 +1,108 @@
+/* Field notes, optical maps and paper previews share the existing gold/blue palette. */
+.evidence-photo{position:absolute;inset:0;margin:0;padding:9px 9px 0;background:#d9cfba;color:#27322c;box-shadow:0 16px 34px #02070759;transform-origin:50% 65%;pointer-events:none}
+.evidence-photo-visual{position:relative;height:calc(100% - 53px);overflow:hidden;background:#102022}
+.evidence-photo-visual>img{display:block;width:100%;height:100%;object-fit:cover}
+.evidence-photo-visual>div{width:100%;height:100%;min-height:0;overflow:hidden}
+.evidence-photo figcaption{height:53px;padding:10px 2px 8px;display:flex;flex-direction:column;justify-content:center;gap:5px}
+.evidence-photo figcaption>small{font:6px Consolas,monospace;letter-spacing:1px;color:#626959}
+.evidence-photo figcaption>span{display:flex;align-items:center;justify-content:space-between;font:italic 16px var(--serif);line-height:1}
+.photo-back{position:absolute;inset:0;display:block;background:#b9b09b;border:1px solid #e4dac222;pointer-events:none}
+.photo-back-one{transform:rotate(5deg) translate(3px,4px);opacity:.7}
+.photo-back-two{transform:rotate(-8deg) translate(-2px,2px);opacity:.45}
+
+/* The project list remains a list; a small physical exhibit appears beside it. */
+.case-directory{position:relative;z-index:5}
+.case-hover-preview{position:absolute;left:calc(100% + 15px);top:57px;width:232px;height:242px;z-index:8;pointer-events:none}
+.case-hover-preview .design-type{font-size:88px}
+.case-hover-preview .design-label{font-size:7px}
+.case-hover-preview .design-orbit{width:115px;height:115px}
+.case-hover-preview .mcworth-visual .receipt{transform:rotate(-6deg) scale(.78);transform-origin:50% 50%}
+.case-hover-preview .design-swatches{bottom:12px;right:12px}
+.case-hover-preview .design-cross{font-size:13px}
+.directory-file>svg{transition:transform .25s,color .25s}
+.directory-file:hover>svg,.directory-file:focus-visible>svg{transform:translateX(4px);color:var(--gold)}
+@media(max-width:1050px),(hover:none){.case-hover-preview{display:none}}
+
+/* A searchable chapter index, with a calm, fixed preview for mouse and keyboard. */
+.command-modal{width:min(920px,calc(100vw - 48px));max-height:calc(100svh - 48px);margin:auto;background:#101916;border-color:#c7af7c38;overflow:hidden}
+.command-modal .modal-content{padding:0;max-height:calc(100svh - 50px);overflow:auto;scrollbar-width:thin;scrollbar-color:#b4a27b55 transparent}
+.chapter-directory{position:relative}
+.chapter-directory-heading{display:flex;align-items:center;justify-content:space-between;padding:21px 29px 8px}
+.chapter-directory-heading>span{display:flex;align-items:center;gap:12px;color:#bbab87;font:8px Consolas,monospace;letter-spacing:2px}
+.chapter-directory-heading i{display:block;width:27px;height:1px;background:#b4a27d5c}
+.chapter-directory-heading>button{display:grid;place-items:center;width:36px;height:36px;color:#c1b28f;background:transparent;border:1px solid #beac7b24;transition:background .2s,transform .2s}
+.chapter-directory-heading>button:hover{background:#c6b27c13;transform:rotate(6deg)}
+.chapter-directory .command-input{margin:0 29px;padding:13px 0 18px;gap:12px}
+.chapter-directory .command-input input{font-size:12px;min-width:0;color:#ece7d8}
+.chapter-directory .command-input input::placeholder{color:#85917e}
+.chapter-directory-layout{display:grid;grid-template-columns:1.12fr 1fr;gap:33px;padding:24px 30px 27px}
+.chapter-directory-results{display:flex;flex-direction:column;min-width:0}
+.chapter-directory-results>a{position:relative;display:flex;align-items:center;gap:18px;padding:11px 13px 11px 5px;min-height:71px;border-bottom:1px solid #c6b17e20;color:#a7ad9a;text-decoration:none;transition:color .22s}
+.chapter-directory-results>a:first-child{border-top:1px solid #c6b17e20}
+.chapter-directory-number{font:9px Consolas,monospace;letter-spacing:1px;color:#a79470;min-width:15px}
+.chapter-directory-label{display:flex;flex-direction:column;gap:2px;min-width:0}
+.chapter-directory-label>strong{font:400 clamp(25px,2.7vw,35px)/1.08 var(--serif);white-space:nowrap;letter-spacing:-.5px}
+.chapter-directory-label>small{font:8px/1.8 var(--song);letter-spacing:2px;color:#7f8a7a}
+.chapter-directory-results>a>svg{margin-left:auto;width:15px;flex:none;color:#8d8a6f;transition:transform .25s,color .25s}
+.chapter-directory-results>a.is-selected{color:#e4c994}
+.chapter-directory-results>a.is-selected>svg{transform:translate(2px,-2px);color:#e4c994}
+.chapter-directory-results>a:focus-visible{outline:1px solid #dbc58f;outline-offset:3px}
+.chapter-selection-mark{position:absolute;left:-13px;top:25%;bottom:25%;width:2px;background:#d5bc87}
+.chapter-directory-preview{position:relative;display:flex;flex-direction:column;justify-content:center;padding:9px 17px 0;min-width:0}
+.chapter-preview-caption{font:6px Consolas,monospace;letter-spacing:1.7px;color:#798575;text-align:center;margin-bottom:20px}
+.chapter-preview-stage{position:relative;width:100%;height:250px;max-width:270px;margin:auto;flex:none}
+.chapter-directory-preview>p{font:11px/1.9 var(--song);text-align:center;color:#b9b49f;margin:24px auto 13px;max-width:25em;min-height:40px}
+.chapter-preview-rule{display:block;width:37px;height:1px;background:#c6ac7d66;margin:0 auto}
+.preview-about .evidence-photo-visual>img{object-fit:contain;object-position:center 8%;background:radial-gradient(ellipse at 50% 0,#63634b55,transparent)}
+.preview-library .evidence-photo-visual>img{object-position:23% 50%;transform:scale(1.3)}
+.chapter-directory-footer{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:17px 29px;border-top:1px solid #c8b28020;color:#929983;font:8px Consolas,var(--song);letter-spacing:.4px}
+.chapter-directory-footer>span:first-child{display:flex;align-items:center;gap:4px}
+.chapter-directory-footer i{height:9px;width:1px;background:#a697744d;display:block;margin:0 6px}
+.chapter-directory-footer>span:last-child{color:#b9a57a}
+.chapter-directory-empty{padding:70px 15px;color:#b8b79f}
+.chapter-directory-empty>span{font:9px Consolas,monospace;letter-spacing:2px;color:#c9b17e}
+.chapter-directory-empty>p{font:12px/1.9 var(--song);margin:15px 0 25px}
+.chapter-directory-empty>button{display:flex;align-items:center;gap:16px;color:#d2bc8b;font:11px var(--song)}
+@media(max-width:699px){
+  .command-modal{width:calc(100vw - 24px);max-height:calc(100svh - 24px);margin:auto}
+  .chapter-directory-heading{padding:11px 17px 5px}.chapter-directory-heading>span{font-size:7px;letter-spacing:1.2px}
+  .chapter-directory .command-input{margin:0 17px;padding:12px 0 16px}.chapter-directory .command-input input{font-size:12px}
+  .chapter-directory-layout{grid-template-columns:1fr;padding:14px 20px 18px;gap:0}
+  .chapter-directory-preview{display:none}.chapter-directory-results>a{min-height:67px;padding:10px 3px;gap:16px}
+  .chapter-directory-label>strong{font-size:31px}.chapter-directory-label>small{font-size:8px}
+  .chapter-selection-mark{left:-9px}.chapter-directory-footer{padding:16px 18px;gap:8px;font-size:7px}
+}
+@media(min-width:700px) and (max-height:720px){.chapter-directory-heading{padding-top:12px}.chapter-directory-layout{padding-top:16px;padding-bottom:18px}.chapter-directory-results>a{min-height:63px}.chapter-preview-stage{height:227px}.chapter-directory-preview>p{margin-top:18px}}
+
+/* An engraved atlas: ink coastlines, a great-circle thread and native controls. */
+.artifact-stage.atlas-stage{min-height:320px;overflow:hidden;align-items:stretch;padding:0 18px}
+.atlas-loading{display:grid;place-items:center;width:100%;font:11px var(--song);letter-spacing:3px;color:#b9ab8b}
+.detective-atlas{margin:0;width:100%;height:100%;min-height:320px;display:flex;flex-direction:column;color:#c5b58d;--atlas-ink:#d3b984}
+.detective-atlas.atlas-conan{--atlas-ink:#93c9df}
+.detective-atlas>figcaption{display:flex;align-items:center;justify-content:space-between;min-height:25px;color:#87917d;font:6px Consolas,monospace;letter-spacing:1.5px}
+.detective-atlas>figcaption>button{display:grid;place-items:center;width:32px;height:32px;color:#bbaa82;border:1px solid #baa57a26;flex:none;transition:color .2s,transform .3s}
+.detective-atlas>figcaption>button:hover{transform:rotate(-25deg);color:var(--atlas-ink)}
+.atlas-viewport{position:relative;flex:1;min-height:225px;isolation:isolate;overflow:hidden}
+.atlas-viewport canvas{display:block;width:100%;height:100%;position:absolute;inset:0;touch-action:pan-y;cursor:auto}
+.atlas-viewport canvas:focus-visible{outline:1px solid #c3ac7a88;outline-offset:-3px}
+.atlas-crosshair{position:absolute;left:50%;top:48%;translate:-50% -50%;font:14px Consolas,monospace;color:#c9b17b3d;pointer-events:none}
+.atlas-marker{position:absolute;left:0;top:0;min-width:44px;min-height:44px;width:44px;height:44px;margin:-22px 0 0 -22px;display:flex;align-items:center;justify-content:center;color:var(--atlas-ink);z-index:2}
+.atlas-marker>i{width:5px;height:5px;border-radius:50%;background:currentColor;box-shadow:0 0 0 4px #c4aa6c1f,0 0 16px #d4c39535;flex:none}
+.atlas-marker>span{position:absolute;bottom:28px;left:15px;display:flex;flex-direction:column;gap:2px;color:#ded8c5;text-align:left;font:italic 15px var(--serif);text-shadow:0 1px 3px #0c1515;white-space:nowrap}
+.atlas-marker.marker-conan>span{left:auto;right:15px;text-align:right}
+.atlas-marker small{font:6px Consolas,monospace;letter-spacing:1.4px;color:var(--atlas-ink)}
+.atlas-marker[aria-pressed=true]>i{box-shadow:0 0 0 5px #c5ab792b,0 0 18px #d4c39559}
+.atlas-marker:focus-visible{outline:1px solid currentColor;outline-offset:-4px;border-radius:50%}
+.atlas-coordinates{position:absolute;left:0;bottom:6px;color:#b6b49b;font:7px Consolas,monospace;letter-spacing:.5px;pointer-events:none}
+.atlas-drag-note{position:absolute;right:0;bottom:6px;color:#798977;font:6px Consolas,monospace;letter-spacing:1.2px;pointer-events:none}
+.atlas-city-index{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:7px;min-height:43px}
+.atlas-city-index>button{display:flex;align-items:center;gap:10px;text-align:left;padding:8px 0;border-top:1px solid #b9a77d2b;color:#849380;transition:color .25s,border-color .25s}
+.atlas-city-index>button>span{display:flex;align-items:center;gap:9px;font:italic 17px var(--serif)}
+.atlas-city-index small{font:7px Consolas,monospace;letter-spacing:.4px;color:#74806e}
+.atlas-city-index b{font:6px Consolas,monospace;letter-spacing:1px;margin-left:auto;font-weight:400}
+.atlas-city-index>button>svg{width:11px;flex:none}
+.atlas-city-index>button[aria-pressed=true]{color:var(--atlas-ink);border-color:#c3ae7a7d}
+.atlas-city-index>button:focus-visible{outline:1px solid var(--atlas-ink);outline-offset:2px}
+.portrait-view-switch>span{font-size:4px}
+@media(max-width:699px){.artifact-stage.atlas-stage{aspect-ratio:auto;min-height:330px;padding:0 17px}.detective-atlas{min-height:330px}.atlas-drag-note{letter-spacing:.5px;font-size:5px}.atlas-coordinates{font-size:6px}.atlas-city-index>button>span{font-size:17px;gap:7px}.atlas-city-index small{font-size:7px}.portrait-view-switch>span{display:none}}
+@media(prefers-reduced-motion:reduce){.chapter-directory-heading>button,.directory-file>svg,.atlas-city-index>button{transition:none}}

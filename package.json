@@ -1,0 +1,29 @@
+{
+  "name": "221b-mind-palace",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 2218 --strictPort",
+    "build": "npm run check:deps && tsc -b && vite build",
+    "check:deps": "node scripts/check-deps.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 2219 --strictPort"
+  },
+  "dependencies": {
+    "@base-ui/react": "1.9.0",
+    "lucide-react": "^1.60.0",
+    "motion": "^14.4.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
