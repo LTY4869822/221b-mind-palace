@@ -1,4 +1,4 @@
-import{a as e,c as t,d as n,f as r,h as i,i as a,l as o,m as s,n as c,o as l,p as u,r as d,s as f,u as p}from"./index-DgxjhrSm.js";import{B as m,D as h,H as g,M as ee,N as te,O as _,P as v,R as y,S as b,V as x,c as S,d as C,f as w,j as ne,k as T,l as re,m as E,o as ie,s as ae,t as oe,u as D,v as se,y as ce}from"./three.module-CXV02X8a.js";import{n as O,t as le}from"./coastlines-8wFrTNCT.js";import{a as ue,i as de,n as fe,o as k,r as pe}from"./Opening-BMkTxEWt.js";var me=`
+import{a as e,c as t,d as n,f as r,h as i,i as a,l as o,m as s,n as c,o as l,p as u,r as d,s as f,u as p}from"./index-BvzFLhiq.js";import{B as m,D as h,H as g,M as ee,N as te,O as _,P as v,R as y,S as b,V as x,c as S,d as C,f as w,j as ne,k as T,l as re,m as E,o as ie,s as ae,t as oe,u as D,v as se,y as ce}from"./three.module-CXV02X8a.js";import{n as O,t as le}from"./coastlines-8wFrTNCT.js";import{a as ue,i as de,n as fe,o as k,r as pe}from"./Opening-DbCzPjrE.js";var me=`
 attribute vec4 aStyle, aRig, aLuma, aRain, aStream, aPath;
 attribute vec3 aShell;
 attribute vec2 aFlight;
