@@ -13,15 +13,21 @@ npm run preview
 
 构建产物位于 `dist/`。网站使用 hash 路由，可直接访问 `/#/`、`/#/opening`、`/#/aigc`、`/#/cases`、`/#/studio`，不需要服务器重写页面路径。
 
-## Vercel
+## GitHub Pages 发布
 
-仓库根目录包含 `vercel.json`。安装命令为 `npm ci`，构建命令为 `npm run build`，静态输出目录为 `dist`。
+正式地址：[221B Mind Palace](https://lty4869822.github.io/221b-mind-palace/)。
+
+源码分支为 `codex/site-launch`，构建产物分支为 `codex/pages`。在源码分支运行 `npm ci`、`npm run build` 后，将 `dist/` 内容发布到 `codex/pages` 根目录，GitHub Pages 从该分支根目录提供静态网站。
+
+仓库中的 `vercel.json` 保留为备用配置，构建命令为 `npm run build`，输出目录为 `dist`；当前尚未部署到 Vercel。
 
 ## 工作室互联
 
-`public/studio-site/` 已包含恢复后的原版工作室和独立链接桥接，个人站工作室介绍位于 `/#/studio`。同一部署中可以从介绍页进入 `/studio-site/#/`，再返回个人介绍页。
+两站互链已配置。个人站的[工作室介绍页](https://lty4869822.github.io/221b-mind-palace/#/studio)会前往[独立工作室官网](https://lty4869822.github.io/code-adventure-studio/)，工作室可以返回个人站介绍页。
 
-更新内嵌工作室时，将工作室项目构建出的 `dist/` 内容替换到 `public/studio-site/`，再重新构建个人站。独立部署的工作室可在其 `site/index.html` 的 `personal-site-url` meta 中填写个人站正式地址。
+`public/studio-site/` 同时保留恢复后的原版工作室，供本地预览和内嵌访问。更新它时，将工作室项目构建出的 `dist/` 内容替换到该目录，再重新构建个人站。
+
+如需覆盖个人站指向的工作室地址，可在构建前设置 `VITE_STUDIO_URL`；未设置时，正式环境使用上方 GitHub Pages 地址，本地预览使用内嵌工作室。工作室返回个人站的地址由其 `site/index.html` 中的 `personal-site-url` meta 配置。
 
 ## 源码
 

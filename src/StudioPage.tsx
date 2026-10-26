@@ -6,7 +6,10 @@ import { useSceneMotion } from "./useSceneMotion";
 import { profile } from "./content";
 import "./studio-page.css";
 
-const studio = `${import.meta.env.BASE_URL}studio-site/`;
+const localPreview = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+const studio = (import.meta.env.VITE_STUDIO_URL?.trim() || (localPreview
+  ? `${import.meta.env.BASE_URL}studio-site/`
+  : 'https://lty4869822.github.io/code-adventure-studio/')).replace(/\/+$/, '') + '/';
 const asset = (name: string) => `${import.meta.env.BASE_URL}media/${name}`;
 const ease = [0.22, 1, 0.36, 1] as const;
 const directions = {
